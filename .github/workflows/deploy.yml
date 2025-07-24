@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_DB_NAME: mongo_gha-demo
+  MONGODB_DB_NAME: ${{ vars.MONGODB_DB_NAME }}
   PORT: 3000
 jobs:
   test:
